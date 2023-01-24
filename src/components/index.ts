@@ -1,0 +1,1 @@
+export { StanfordBunny } from "./StanfordBunny"
