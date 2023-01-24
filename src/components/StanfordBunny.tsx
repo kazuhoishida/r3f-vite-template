@@ -4,7 +4,7 @@ import * as THREE from "three"
 
 export function StanfordBunny({ ...props }) {
   const group = useRef<THREE.Group>(null)
-  const { nodes, materials }: any = useGLTF("/public/models/stanford_bunny.glb")
+  const { nodes, materials }: any = useGLTF("/models/stanford_bunny.glb")
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -14,4 +14,4 @@ export function StanfordBunny({ ...props }) {
   )
 }
 
-useGLTF.preload("/public/models/stanford_bunny.glb")
+useGLTF.preload("/models/stanford_bunny.glb")
